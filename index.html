@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home | Samuel Njuguna Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="logo">Samuel • Geo & Planning</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog & Insights</a></li>
+        <li><a href="geonex-labs.html">Geonex Labs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">Urban & Regional Planning • Land Surveying • GIS</span>
+      <h1>Hi, I'm Samuel.<br> I design, survey, and map better spaces.</h1>
+      <p>
+        I’m a Kenyan urban & regional planner, land surveying trainee, and GIS enthusiast.
+        I work on masterplans, subdivisions, riparian analysis, and spatial policy for real-world projects.
+      </p>
+      <div class="hero-buttons">
+        <a href="portfolio.html" class="btn btn-primary">View My Portfolio</a>
+        <a href="case-studies.html" class="btn btn-secondary">Explore Case Studies</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Snapshot</h3>
+      <p><strong>Location:</strong> Nairobi, Kenya</p>
+      <p><strong>Domains:</strong> Physical Planning, Land Survey, GIS & Remote Sensing</p>
+      <p><strong>Interests:</strong> ASAL optimization, riparian zones, Spatial AI, urban analytics</p>
+      <p><strong>Vision:</strong> Building Geonex & Spatial AI solutions for African cities and regions.</p>
+    </div>
+  </div>
+
+  <div class="container section">
+    <h2 class="section-title">What I Work On</h2>
+    <p class="section-subtitle">A mix of planning, surveying, and geospatial analysis.</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Physical Planning</h3>
+        <p>
+          Masterplans, subdivision schemes, change of user, and policy-aligned planning briefs.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Land Surveying</h3>
+        <p>
+          Topo-cadastral surveys, boundary clarification, beacon re-establishment, and mapping support.
+        </p>
+      </div>
+      <div class="card">
+        <h3>GIS & Spatial Analytics</h3>
+        <p>
+          Spatial analysis, MCDA, riparian zoning, suitability studies, and clear cartographic outputs.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © <span id="year"></span> Samuel Njuguna • Portfolio Site
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
