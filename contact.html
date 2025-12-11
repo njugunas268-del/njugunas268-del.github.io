@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Samuel Njuguna</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="logo">Samuel • Geo & Planning</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog & Insights</a></li>
+        <li><a href="geonex-labs.html">Geonex Labs</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container contact-grid">
+    <div>
+      <h1 class="section-title">Let’s Work Together</h1>
+      <p class="section-subtitle">
+        Reach out for planning briefs, survey support, GIS analysis, or collaborations around Geonex & Spatial AI.
+      </p>
+
+      <form>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your name" />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" />
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell me about your project..."></textarea>
+
+        <button type="submit" class="btn btn-primary">Send Message (static)</button>
+      </form>
+      <p style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem;">
+        This is a static form. To make it send real emails, connect a service like Formspree, Netlify Forms, or similar.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Contact Details</h3>
+      <p><strong>Email:</strong> your.email@example.com</p>
+      <p><strong>Location:</strong> Nairobi, Kenya</p>
+      <p><strong>LinkedIn:</strong> Add your LinkedIn link</p>
+      <p><strong>X / GitHub:</strong> Add relevant profiles here</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © <span id="year"></span> Samuel Njuguna • Portfolio Site
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
