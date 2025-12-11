@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Geonex Labs | Samuel Njuguna</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="logo">Samuel • Geo & Planning</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog & Insights</a></li>
+        <li><a href="geonex-labs.html" class="active">Geonex Labs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1 class="section-title">Geonex Labs</h1>
+    <p class="section-subtitle">
+      Experiments, concepts, and prototypes on the path to Spatial AI.
+    </p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>County Spatial Dashboard Concept</h3>
+        <p>
+          A dashboard to visualise land use, infrastructure, riparian zones, and services across a county.
+        </p>
+        <p style="margin-top:0.5rem;font-size:0.9rem;">
+          <strong>Idea stack:</strong> PostGIS, Leaflet/Mapbox, Python APIs, responsive web UI.
+        </p>
+      </div>
+      <div class="card">
+        <h3>ASAL Resource Explorer</h3>
+        <p>
+          Prototype for mapping water points, grazing corridors, and suitability classes in ASAL regions.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Field Data Collection Templates</h3>
+        <p>
+          Mobile-ready forms for parcel data, photos, GPS points, and land use descriptions linked to GIS.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Future Directions</h3>
+        <p>
+          Integrating predictive models, machine learning, carbon-credit workflows, and spatial simulations for scenario planning.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © <span id="year"></span> Samuel Njuguna • Portfolio Site
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
