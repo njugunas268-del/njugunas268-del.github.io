@@ -7,7 +7,7 @@
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #f5f7fb;
+  background-color: #f3f4f6; /* softer grey */
   color: #111827;
   line-height: 1.6;
 }
@@ -25,7 +25,7 @@ body {
 
 /* ===== Header & Navbar ===== */
 header {
-  background-color: #0b1220;
+  background-color: #0f172a; /* deep navy */
   color: #fff;
   padding: 1rem 0;
   position: sticky;
@@ -63,8 +63,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  background-color: #22c55e;
-  color: #0b1220;
+  background-color: #2563eb; /* blue accent */
+  color: #f9fafb;
 }
 
 /* ===== Hero ===== */
@@ -90,14 +90,15 @@ nav a.active {
 
 .badge {
   display: inline-block;
-  background: #dcfce7;
-  color: #166534;
+  background: #e0f2fe; /* light blue */
+  color: #0369a1;      /* deeper cyan text */
   padding: 0.2rem 0.9rem;
   border-radius: 999px;
   font-size: 0.75rem;
   margin-bottom: 0.75rem;
 }
 
+/* ===== Buttons ===== */
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -105,7 +106,6 @@ nav a.active {
   margin-top: 1.2rem;
 }
 
-/* ===== Buttons ===== */
 .btn {
   display: inline-block;
   padding: 0.6rem 1.3rem;
@@ -113,25 +113,25 @@ nav a.active {
   text-decoration: none;
   font-size: 0.9rem;
   border: 1px solid transparent;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
   cursor: pointer;
 }
 
 .btn-primary {
-  background-color: #22c55e;
-  color: #052e16;
-  box-shadow: 0 8px 18px rgba(34, 197, 94, 0.3);
+  background-color: #2563eb; /* primary blue */
+  color: #eff6ff;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35);
 }
 
 .btn-secondary {
   background-color: #ffffff;
-  color: #111827;
-  border-color: #d1d5db;
+  color: #1f2937;
+  border-color: #cbd5f5;
 }
 
 .btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.15);
 }
 
 /* ===== Cards & Grids ===== */
@@ -139,7 +139,7 @@ nav a.active {
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 1.5rem;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
   border: 1px solid #e5e7eb;
 }
 
@@ -159,6 +159,7 @@ nav a.active {
 .section-title {
   font-size: 1.7rem;
   margin-bottom: 0.5rem;
+  color: #0f172a;
 }
 
 .section-subtitle {
@@ -180,12 +181,13 @@ nav a.active {
   border: 1px solid #d1d5db;
   font-size: 0.85rem;
   background: #f9fafb;
+  color: #374151;
 }
 
 .tab-pill.active {
-  background-color: #0b1220;
+  background-color: #111827;
   color: #f9fafb;
-  border-color: #0b1220;
+  border-color: #111827;
 }
 
 /* ===== Timeline (Resume) ===== */
@@ -204,7 +206,7 @@ nav a.active {
   content: "";
   width: 10px;
   height: 10px;
-  background-color: #22c55e;
+  background-color: #2563eb;
   border-radius: 999px;
   position: absolute;
   left: -6px;
@@ -231,6 +233,7 @@ form textarea {
   border: 1px solid #d1d5db;
   margin: 0.4rem 0 1rem 0;
   font-family: inherit;
+  background-color: #f9fafb;
 }
 
 form textarea {
@@ -250,7 +253,7 @@ form textarea {
 footer {
   margin-top: 3rem;
   padding: 1.5rem 0;
-  background-color: #0b1220;
+  background-color: #0f172a; /* match header */
   color: #9ca3af;
   font-size: 0.85rem;
   text-align: center;
