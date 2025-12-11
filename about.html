@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Me | Samuel Njuguna</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="logo">Samuel • Geo & Planning</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog & Insights</a></li>
+        <li><a href="geonex-labs.html">Geonex Labs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container grid-2">
+    <div>
+      <h1 class="section-title">About Me</h1>
+      <p class="section-subtitle">
+        Planner, surveyor-in-training, GIS nerd, and future Spatial AI founder.
+      </p>
+      <p>
+        I work at the intersection of urban & regional planning, land surveying, and geospatial analytics.
+        My work includes estate masterplans, subdivision schemes, riparian analysis, and spatial policy support in Kenya.
+      </p>
+      <p>
+        I enjoy turning messy datasets, surveys, and maps into clear decisions for landowners, Saccos, counties,
+        and institutions. Long-term, I’m building <strong>Geonex</strong> as a Spatial AI engine for African land and infrastructure decisions.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Core Skills</h3>
+      <ul>
+        <li>Urban & Regional Planning (Kenya)</li>
+        <li>Subdivision & Estate Masterplanning</li>
+        <li>Topo-cadastral Survey Support</li>
+        <li>GIS & Remote Sensing</li>
+        <li>Riparian & Environmental Analysis</li>
+        <li>Technical Report & Planning Brief Writing</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © <span id="year"></span> Samuel Njuguna • Portfolio Site
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
