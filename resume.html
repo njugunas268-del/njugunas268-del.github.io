@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume | Samuel Njuguna</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="logo">Samuel • Geo & Planning</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="blog.html">Blog & Insights</a></li>
+        <li><a href="geonex-labs.html">Geonex Labs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1 class="section-title">Resume</h1>
+    <p class="section-subtitle">Education, experience, and tools I work with.</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Experience</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Urban & Regional Planner</h4>
+            <p><em>Consultancy / Firm • Year–Present</em></p>
+            <p>
+              Preparing subdivision schemes, masterplans, planning briefs, and planning policy support for clients and counties.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h4>Teaching & Training</h4>
+            <p><em>University / Institution • Year–Year</em></p>
+            <p>
+              Teaching Elements of Surveying, Cartography, and GIS fundamentals to planning students.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Education</h3>
+        <ul>
+          <li><strong>Bachelor’s in Urban & Regional Planning</strong> – University of Nairobi</li>
+          <li><strong>Diploma in Land Surveying</strong> – RCMRD (ongoing)</li>
+        </ul>
+        <h3 style="margin-top:1rem;">Tools & Tech</h3>
+        <ul>
+          <li>QGIS / ArcGIS</li>
+          <li>AutoCAD, survey instruments</li>
+          <li>Google Earth & remote sensing tools</li>
+          <li>Basic scripting for GIS workflows</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" style="padding-top:2rem;">
+      <h2 class="section-title">Download CV</h2>
+      <p class="section-subtitle">Link to your full resume PDF hosted in this repository.</p>
+      <div class="card">
+        <p>
+          <a href="assets/documents/Samuel_Resume.pdf" class="btn btn-primary">
+            Download Full CV (PDF)
+          </a>
+        </p>
+        <p style="margin-top:0.5rem;font-size:0.9rem;">
+          (Upload your resume as <code>assets/documents/Samuel_Resume.pdf</code>.)
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © <span id="year"></span> Samuel Njuguna • Portfolio Site
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
