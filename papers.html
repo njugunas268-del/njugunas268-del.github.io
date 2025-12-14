@@ -1,39 +1,84 @@
-<article class="pub-card">
-  <h2 class="pub-title">
-    Riparian Zones at a Crossroads: Understanding Land Management for Riparian Reserves
-  </h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academic Papers | Samuel Njuguna</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-  <p class="pub-authors">
-    Samuel Njuguna; Dr. Silas M. Muketha, PhD
-  </p>
-
-  <p class="pub-meta">
-    ISK Pre-AGM Conference • Nairobi • May 2025
-  </p>
-
-  <p class="pub-abstract">
-    Conference presentation examining the legal, ecological, and planning dilemmas surrounding
-    riparian reserves in Kenya. The paper critiques fragmented institutional mandates, inconsistent
-    riparian definitions, and weak spatial delineation, and proposes an integrated framework for
-    riparian governance grounded in planning, land administration, surveying, and GIS.
-  </p>
-
-  <div class="pub-actions">
-    <a
-      class="pub-link"
-      href="assets/documents/ISK_Riparian_Zones_Presentation_2025.pdf"
-      target="_blank"
-      rel="noopener"
-    >
-      View Presentation (PDF)
-    </a>
-
-    <a
-      class="pub-link"
-      href="assets/documents/ISK_Riparian_Zones_Presentation_2025.pdf"
-      download
-    >
-      Download PDF
-    </a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Samuel Njuguna</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog &amp; Insights</a></li>
+        <li><a class="active" href="papers.html">Academic Papers</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="geonex-labs.html">Geonex Labs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-</article>
+</header>
+
+<main class="page">
+  <div class="container page-inner">
+    <h1 class="page-title">Academic Papers &amp; Publications</h1>
+    <p class="page-subtitle">
+      Peer-reviewed research contributions and professional conference presentations.
+    </p>
+
+    <section class="pub-list">
+
+      <article class="pub-card">
+        <h2 class="pub-title">
+          Riparian Zones at a Crossroads: Understanding Land Management for Riparian Reserves
+        </h2>
+
+        <p class="pub-authors">Samuel Njuguna; Dr. Silas M. Muketha, PhD</p>
+
+        <p class="pub-meta">ISK Pre-AGM Conference • Nairobi • May 2025</p>
+
+        <p class="pub-abstract">
+          Conference presentation examining the legal, ecological, and planning dilemmas surrounding riparian reserves in Kenya.
+          It critiques fragmented institutional mandates, inconsistent riparian definitions, and weak spatial delineation,
+          and proposes an integrated framework for riparian governance grounded in planning, land administration, surveying, and GIS.
+        </p>
+
+        <div class="pub-actions">
+          <!-- If you renamed the file to ISK_PRESENTATION.pdf use that path instead -->
+          <a class="pub-link" href="assets/documents/ISK%20PRESENTATION.pdf" target="_blank" rel="noopener">
+            View Presentation (PDF)
+          </a>
+          <a class="pub-link" href="assets/documents/ISK%20PRESENTATION.pdf" download>
+            Download PDF
+          </a>
+        </div>
+      </article>
+
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Samuel Njuguna. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
