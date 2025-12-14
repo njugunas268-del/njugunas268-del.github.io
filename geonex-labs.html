@@ -2,73 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Geonex Labs | Samuel Njuguna</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <div class="container navbar">
-    <div class="logo">Samuel • Geo & Planning</div>
-    <nav>
-      <ul>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Samuel Njuguna</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog &amp; Insights</a></li>
+        <li><a href="papers.html">Academic Papers</a></li>
+        <li><a href="awards.html">Awards</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="case-studies.html">Case Studies</a></li>
-        <li><a href="blog.html">Blog & Insights</a></li>
-        <li><a href="geonex-labs.html" class="active">Geonex Labs</a></li>
+        <li><a class="active" href="geonex-labs.html">Geonex Labs</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="section">
-  <div class="container">
-    <h1 class="section-title">Geonex Labs</h1>
-    <p class="section-subtitle">
-      Experiments, concepts, and prototypes on the path to Spatial AI.
-    </p>
+<section class="labs-hero">
+  <div class="container labs-hero-inner">
+    <span class="labs-badge">Geonex Labs</span>
+    <h1>Building Spatial Systems<br/>for Tomorrow</h1>
+    <p>Exploring advanced spatial analytics, AI-driven planning tools, and next-generation geospatial intelligence platforms.</p>
+  </div>
+</section>
 
-    <div class="grid-2">
-      <div class="card">
-        <h3>County Spatial Dashboard Concept</h3>
-        <p>
-          A dashboard to visualise land use, infrastructure, riparian zones, and services across a county.
-        </p>
-        <p style="margin-top:0.5rem;font-size:0.9rem;">
-          <strong>Idea stack:</strong> PostGIS, Leaflet/Mapbox, Python APIs, responsive web UI.
-        </p>
+<main class="page">
+  <div class="container page-inner">
+    <section class="labs-grid">
+      <div class="labs-card">
+        <h2>Our Mission</h2>
+        <p>Geonex Labs is dedicated to advancing the field of spatial intelligence through research, innovation, and practical application of cutting-edge geospatial technologies.</p>
+        <p>We focus on developing tools and methodologies that make complex spatial analytics accessible to planners, policymakers, and communities.</p>
       </div>
-      <div class="card">
-        <h3>ASAL Resource Explorer</h3>
-        <p>
-          Prototype for mapping water points, grazing corridors, and suitability classes in ASAL regions.
-        </p>
+
+      <div class="labs-card">
+        <h2>Research Areas</h2>
+        <ul class="labs-list">
+          <li>AI-powered land use classification</li>
+          <li>Risk-based spatial decision systems</li>
+          <li>Climate-responsive urban planning frameworks</li>
+          <li>Open-source GIS tools for developing contexts</li>
+        </ul>
       </div>
-      <div class="card">
-        <h3>Field Data Collection Templates</h3>
-        <p>
-          Mobile-ready forms for parcel data, photos, GPS points, and land use descriptions linked to GIS.
-        </p>
+    </section>
+
+    <section class="labs-projects">
+      <h2 class="section-title">Current Projects</h2>
+      <div class="labs-project-grid">
+        <article class="labs-project">
+          <h3>PlannerAI</h3>
+          <p>Machine learning platform for automated land use suitability analysis and scenario modeling.</p>
+        </article>
+        <article class="labs-project">
+          <h3>OpenGeoKE</h3>
+          <p>Open-source spatial data infrastructure for Kenyan planning authorities and research institutions.</p>
+        </article>
       </div>
-      <div class="card">
-        <h3>Future Directions</h3>
-        <p>
-          Integrating predictive models, machine learning, carbon-credit workflows, and spatial simulations for scenario planning.
-        </p>
-      </div>
-    </div>
+    </section>
   </div>
 </main>
 
-<footer>
-  © <span id="year"></span> Samuel Njuguna • Portfolio Site
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Samuel Njuguna. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
 </footer>
+
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
