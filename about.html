@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Me | Samuel Njuguna</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <div class="container navbar">
-    <div class="logo">Samuel • Geo & Planning</div>
-    <nav>
-      <ul>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Samuel Njuguna</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Me</a></li>
+        <li><a class="active" href="about.html">About Me</a></li>
         <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog &amp; Insights</a></li>
+        <li><a href="papers.html">Academic Papers</a></li>
+        <li><a href="awards.html">Awards</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="case-studies.html">Case Studies</a></li>
-        <li><a href="blog.html">Blog & Insights</a></li>
         <li><a href="geonex-labs.html">Geonex Labs</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -25,42 +27,60 @@
   </div>
 </header>
 
-<main class="section">
-  <div class="container grid-2">
-    <div>
-      <h1 class="section-title">About Me</h1>
-      <p class="section-subtitle">
-        Planner, surveyor-in-training, GIS nerd, and future Spatial AI founder.
-      </p>
-      <p>
-        I work at the intersection of urban & regional planning, land surveying, and geospatial analytics.
-        My work includes estate masterplans, subdivision schemes, riparian analysis, and spatial policy support in Kenya.
-      </p>
-      <p>
-        I enjoy turning messy datasets, surveys, and maps into clear decisions for landowners, Saccos, counties,
-        and institutions. Long-term, I’m building <strong>Geonex</strong> as a Spatial AI engine for African land and infrastructure decisions.
-      </p>
-    </div>
+<main class="page">
+  <div class="container page-inner">
+    <h1 class="page-title">About Me</h1>
 
-    <div class="card">
-      <h3>Core Skills</h3>
-      <ul>
-        <li>Urban & Regional Planning (Kenya)</li>
-        <li>Subdivision & Estate Masterplanning</li>
-        <li>Topo-cadastral Survey Support</li>
-        <li>GIS & Remote Sensing</li>
-        <li>Riparian & Environmental Analysis</li>
-        <li>Technical Report & Planning Brief Writing</li>
+    <!-- photo space -->
+    <div class="hero-block" aria-label="About photo placeholder"></div>
+
+    <p class="lead">
+      I am a passionate Urban &amp; Regional Planner and GIS Specialist with a deep commitment to leveraging
+      spatial intelligence for sustainable development and evidence-based decision-making.
+    </p>
+
+    <section class="content-block">
+      <h2>Professional Background</h2>
+      <p>
+        With experience in physical planning, land surveying, and geospatial analysis, I focus on turning complex spatial data
+        into actionable insights that support meaningful decision-making and better cities.
+      </p>
+    </section>
+
+    <section class="content-block">
+      <h2>Areas of Expertise</h2>
+      <ul class="bullet">
+        <li>Urban and regional planning frameworks</li>
+        <li>Land use optimization and spatial analysis</li>
+        <li>GIS-based decision support systems</li>
+        <li>Cadastral surveying and geodetic control</li>
+        <li>Sustainable development and environmental planning</li>
       </ul>
-    </div>
+    </section>
+
+    <section class="content-block">
+      <h2>Philosophy</h2>
+      <p>
+        I believe effective planning and spatial analysis should be grounded in rigorous methodology and local context.
+        My work integrates technical excellence with stakeholder engagement to deliver solutions that are both scientifically sound
+        and practically implementable.
+      </p>
+    </section>
   </div>
 </main>
 
-<footer>
-  © <span id="year"></span> Samuel Njuguna • Portfolio Site
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Samuel Njuguna. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
 </footer>
+
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
