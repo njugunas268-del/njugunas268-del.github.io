@@ -1,73 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blog & Insights | Samuel Njuguna</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+<div class="container page-inner">
+  <h1 class="page-title">Blog &amp; Insights</h1>
+  <p class="page-subtitle">
+    Thoughtful analysis on spatial planning, GIS integration, and policy implications.
+  </p>
 
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">Samuel Njuguna</a>
-    <nav aria-label="Primary">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a class="active" href="blog.html">Blog &amp; Insights</a></li>
-        <li><a href="papers.html">Academic Papers</a></li>
-        <li><a href="awards.html">Awards</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="geonex-labs.html">Geonex Labs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <section class="coming-soon">
+    <div class="coming-icon" aria-hidden="true">✍🏽</div>
+    <h2>Coming Soon</h2>
+    <p>
+      I am currently working on in-depth articles exploring urban planning,
+      geospatial intelligence, climate resilience, and data-driven decision-making.
+    </p>
+    <p class="muted">
+      Check back soon for insights, case reflections, and research-based commentary.
+    </p>
+  </section>
+</div>
+/* ===== Coming Soon ===== */
+.coming-soon {
+  margin-top: 60px;
+  padding: 60px 20px;
+  text-align: center;
+  border: 1px dashed #e5e7eb;
+  border-radius: 12px;
+  background: #fafafa;
+}
 
-<main class="page">
-  <div class="container page-inner">
-    <h1 class="page-title">Blog &amp; Insights</h1>
-    <p class="page-subtitle">Thoughtful analysis on spatial planning, GIS integration, and policy implications.</p>
+.coming-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
 
-    <article class="post">
-      <div class="post-image" aria-label="Post image placeholder"></div>
-      <p class="post-meta">March 2024 • 6 min read</p>
-      <h2 class="post-title">Integrating Traditional Knowledge with Spatial Data</h2>
-      <p class="post-excerpt">
-        Exploring how indigenous knowledge systems can enhance modern GIS applications in land use planning.
-      </p>
-      <a class="post-link" href="#">Read full article →</a>
-    </article>
+.coming-soon h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
 
-    <hr class="divider" />
+.coming-soon p {
+  font-size: 13px;
+  color: #475569;
+  max-width: 520px;
+  margin: 0 auto 6px;
+}
 
-    <article class="post">
-      <div class="post-image" aria-label="Post image placeholder"></div>
-      <p class="post-meta">January 2024 • 12 min read</p>
-      <h2 class="post-title">The Future of Planning in Kenyan ASALs</h2>
-      <p class="post-excerpt">
-        Analysis of emerging trends and challenges in planning for arid and semi-arid lands.
-      </p>
-      <a class="post-link" href="#">Read full article →</a>
-    </article>
-  </div>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© <span id="year"></span> Samuel Njuguna. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-</body>
-</html>
+.coming-soon .muted {
+  color: #94a3b8;
+}
