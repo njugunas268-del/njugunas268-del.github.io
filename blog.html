@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Blog & Insights | Samuel Njuguna</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <div class="container navbar">
-    <div class="logo">Samuel • Geo & Planning</div>
-    <nav>
-      <ul>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Samuel Njuguna</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="resume.html">Resume</a></li>
+        <li><a class="active" href="blog.html">Blog &amp; Insights</a></li>
+        <li><a href="papers.html">Academic Papers</a></li>
+        <li><a href="awards.html">Awards</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="case-studies.html">Case Studies</a></li>
-        <li><a href="blog.html" class="active">Blog & Insights</a></li>
         <li><a href="geonex-labs.html">Geonex Labs</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -25,73 +27,47 @@
   </div>
 </header>
 
-<main class="section">
-  <div class="container">
-    <h1 class="section-title">Blog & Insights</h1>
-    <p class="section-subtitle">
-      Thoughts on planning, land, GIS, ASAL regions, and building Spatial AI for Africa.
-    </p>
+<main class="page">
+  <div class="container page-inner">
+    <h1 class="page-title">Blog &amp; Insights</h1>
+    <p class="page-subtitle">Thoughtful analysis on spatial planning, GIS integration, and policy implications.</p>
 
-    <section class="section" style="padding-top:1rem;">
-      <div class="card">
-        <h2>Featured Insight: Why Spatial Thinking Matters for Kenya’s Future</h2>
-        <p style="font-size:0.9rem;color:#6b7280;">Urban Planning • GIS</p>
-        <p>
-          Kenya’s land, especially in ASAL regions, is underutilized. Combining planning, survey, and GIS can
-          unlock value in ways that traditional planning alone cannot. This feature explores how spatial
-          thinking changes decision-making for counties, investors, and communities.
-        </p>
-        <p style="margin-top:0.75rem;">
-          <a href="#" class="btn btn-secondary">Read full article (coming soon)</a>
-        </p>
-      </div>
-    </section>
+    <article class="post">
+      <div class="post-image" aria-label="Post image placeholder"></div>
+      <p class="post-meta">March 2024 • 6 min read</p>
+      <h2 class="post-title">Integrating Traditional Knowledge with Spatial Data</h2>
+      <p class="post-excerpt">
+        Exploring how indigenous knowledge systems can enhance modern GIS applications in land use planning.
+      </p>
+      <a class="post-link" href="#">Read full article →</a>
+    </article>
 
-    <section class="section" style="padding-top:1rem;">
-      <h2 class="section-title">Recent Posts</h2>
-      <p class="section-subtitle">You can link these to PDFs or dedicated article pages later.</p>
-      <div class="grid-2">
-        <div class="card">
-          <h3>Understanding Riparian Zones Beyond the Regulations</h3>
-          <p style="font-size:0.9rem;color:#6b7280;">Urban Planning • Environment</p>
-          <p>
-            A practical look at how riparian reserves influence layout design, infrastructure routing, and long-term risk.
-          </p>
-          <p style="margin-top:0.5rem;">
-            <a href="#" target="_blank">View article</a>
-          </p>
-        </div>
-        <div class="card">
-          <h3>Bringing Survey, Planning & GIS onto One Table</h3>
-          <p style="font-size:0.9rem;color:#6b7280;">Surveying • GIS</p>
-          <p>
-            Why integrated workflows between planners, surveyors, and GIS analysts produce better subdivision and masterplans.
-          </p>
-        </div>
-        <div class="card">
-          <h3>ASAL Regions: From Marginal to Strategic</h3>
-          <p style="font-size:0.9rem;color:#6b7280;">ASAL • Policy • GIS</p>
-          <p>
-            How geospatial analysis can reveal opportunities in water access, grazing routes, and settlement planning.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Building Geonex & Spatial AI: Personal Roadmap</h3>
-          <p style="font-size:0.9rem;color:#6b7280;">Spatial AI • Entrepreneurship</p>
-          <p>
-            A long-term vision for a Spatial AI platform serving counties, Saccos, survey firms, and citizens.
-          </p>
-        </div>
-      </div>
-    </section>
+    <hr class="divider" />
+
+    <article class="post">
+      <div class="post-image" aria-label="Post image placeholder"></div>
+      <p class="post-meta">January 2024 • 12 min read</p>
+      <h2 class="post-title">The Future of Planning in Kenyan ASALs</h2>
+      <p class="post-excerpt">
+        Analysis of emerging trends and challenges in planning for arid and semi-arid lands.
+      </p>
+      <a class="post-link" href="#">Read full article →</a>
+    </article>
   </div>
 </main>
 
-<footer>
-  © <span id="year"></span> Samuel Njuguna • Portfolio Site
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Samuel Njuguna. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
 </footer>
+
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
